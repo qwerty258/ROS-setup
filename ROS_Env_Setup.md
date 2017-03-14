@@ -34,3 +34,7 @@ sudo ifup wlan0
     (2) allow port 22 for ssh: `sudo ufw allow 22`
     
     (3) start or restart openssh server: `sudo /etc/init.d/ssh restart`
+    
+8. Install ROS framework:
+
+    follow the instruction here:[Ubuntu install of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
