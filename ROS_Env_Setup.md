@@ -1,4 +1,4 @@
-#ROS install
+# ROS install
 ## Mac:
 
 ## Raspberry debian based:
@@ -9,9 +9,9 @@
 5. If write successed, put SD card into board and boot.
 6. Wireless startup auto connect configuration:
 
-(1) use `ifconfig` to identify what wireless interface name is. (usually `wlan0`)
+    (1) use `ifconfig` to identify what wireless interface name is. (usually `wlan0`)
 
-(2) open `/etc/network/interfaces` with proper privilege, replace `auto lo` or `auto eth0` with `auto wlan0`, and if there is no configuration about wlan0, add:
+    (2) open `/etc/network/interfaces` with proper privilege, replace `auto lo` or `auto eth0` with `auto wlan0`, and if there is no configuration about wlan0, add:
 ```
 iface wlan0 inet dhcp
 	wpa-ssid AUDATECH
@@ -19,10 +19,18 @@ iface wlan0 inet dhcp
 ```
 if thers is one, make it look like above.
 
-(3) use `wpa_passphrase <ssid> <password>` to get wpa-psk
+    (3) use `wpa_passphrase <ssid> <password>` to get wpa-psk
 
-(4) "reboot" wireless interface:
+    (4) "reboot" wireless interface:
 ```
 sudo ifdown wlan0
 sudo ifup wlan0
 ```
+
+7. Setup remote ssh access:
+
+    (1) install openssh-server: `sudo apt-get install openssh-server`
+    
+    (2) allow port 22 for ssh: `sudo ufw allow 22`
+    
+    (3) start or restart openssh server: `sudo /etc/init.d/ssh restart`
