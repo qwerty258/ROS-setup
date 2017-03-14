@@ -17,7 +17,7 @@ iface wlan0 inet dhcp
 	wpa-ssid AUDATECH
 	wpa-psk udifhduijhnklfdkahfdkahfkda
 ```
-if thers is one, make it look like above.
+if there is one, make it look like above.
 
     (3) use `wpa_passphrase <ssid> <password>` to get wpa-psk
 
@@ -33,10 +33,10 @@ sudo ifup wlan0
     
     (2) enable service: `sudo systemctl enable ssh.service`
     
-    (3) allow port 22 for ssh: `sudo ufw allow 22`
+    (3) allow port 22 for ssh: `sudo ufw allow ssh`
     
     (4) start or restart openssh server: `sudo systemctl restart sshd.service`
     
 8. Install ROS framework:
 
-    follow the instruction here:[Ubuntu install of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+    follow the instruction here: [Ubuntu install of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
