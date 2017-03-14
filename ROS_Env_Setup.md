@@ -31,9 +31,11 @@ sudo ifup wlan0
 
     (1) install openssh-server: `sudo apt-get install openssh-server`
     
-    (2) allow port 22 for ssh: `sudo ufw allow 22`
+    (2) enable service: `sudo systemctl enable ssh.service`
     
-    (3) start or restart openssh server: `sudo /etc/init.d/ssh restart`
+    (3) allow port 22 for ssh: `sudo ufw allow 22`
+    
+    (4) start or restart openssh server: `sudo systemctl restart sshd.service`
     
 8. Install ROS framework:
 
