@@ -60,3 +60,10 @@ sudo ifup wlan0
 8. Install ROS framework:
 
     follow the instruction here: [Ubuntu install of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+
+9. Do remember add following lines to .bashrc for convenience
+
+```
+source /opt/ros/kinetic/setup.bash
+source ~/catkin_workspace/devel/setup.bash
+```
