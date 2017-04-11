@@ -17,3 +17,10 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt-get install python-rosinstall
+
+# additional packages
+sudo apt-get install    ros-kinetic-yocs-velocity-smoother \
+                        ros-kinetic-xacro \
+                        ros-kinetic-robot-pose-publisher \
+                        ros-kinetic-joint-state-publisher \
+                        ros-kinetic-amcl
