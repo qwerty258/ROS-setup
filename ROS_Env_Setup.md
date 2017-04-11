@@ -6,7 +6,7 @@ follow the install script [here](https://github.com/jundazhu/ros-install-osx/blo
 1. Download operating system img file corresponding to board.
 2. Extract img file if compressed.
 3. Before writing to SD card, use `diskutil` to confirm you are writing to the right place.
-4. Write img to SD card: `sudo dd if=/Path/to/img/file.img of=/dev/rdisk2 bs=1m`. 
+4. Write img to SD card: `sudo dd if=/Path/to/img/file.img of=/dev/rdisk2 bs=4m status=progress`. 
 5. If write successed, put SD card into board and boot.
 6. Wireless startup auto connect configuration:
 
