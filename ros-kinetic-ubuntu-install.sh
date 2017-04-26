@@ -23,4 +23,5 @@ sudo apt-get install    ros-kinetic-yocs-velocity-smoother \
                         ros-kinetic-xacro \
                         ros-kinetic-robot-pose-publisher \
                         ros-kinetic-joint-state-publisher \
-                        ros-kinetic-amcl
+                        ros-kinetic-amcl \
+						ros-kinetic-robot-state-publisher
