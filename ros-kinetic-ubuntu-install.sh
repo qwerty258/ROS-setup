@@ -24,4 +24,6 @@ sudo apt-get install    ros-kinetic-yocs-velocity-smoother \
                         ros-kinetic-robot-pose-publisher \
                         ros-kinetic-joint-state-publisher \
                         ros-kinetic-amcl \
-						ros-kinetic-robot-state-publisher
+                        ros-kinetic-robot-state-publisher \
+                        ros-kinetic-teleop-twist-keyboard \
+                        ros-kinetic-navigation
